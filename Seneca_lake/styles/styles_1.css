@@ -1,0 +1,287 @@
+/* Resetting */
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+scroll-behavior: smooth;   
+}
+
+body{
+background-color: #00A6BD;
+}
+
+/* Landing Background Image */
+
+#home{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-image: url('../images/senecaLanding.jpg'); 
+background-size: cover;         
+background-position: center;    
+background-repeat: no-repeat;   
+background-attachment: fixed;   
+
+}
+
+/* Overlay effect with semi-transparent dark overlay */
+#overlay {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: rgba(0,0,0,0.5); 
+z-index: 1; 
+}
+
+
+
+#tagline{
+font-size: 3em;
+color: white;
+z-index: 1;   
+text-align: center; 
+}
+
+#tagline span{
+font-size: 1.3rem;
+}
+
+
+/* Navbar styling with transparent background by default */
+#navbar {
+position: fixed;
+top: 0;
+width: 100%;
+padding: 10px;
+background-color: transparent;
+transition: background-color 0.3s ease; 
+z-index: 1000;
+}
+
+/* Changes navbar color on scroll */
+#navbar.scrolled {
+background-color: #325694; 
+}
+
+/* General styling for lists */
+ul {
+list-style-type: none;
+display: flex;
+align-items: center;
+}
+
+/* Styling each list item in navbar */
+ul li {
+display: inline;
+font-weight: 400;
+}
+
+
+
+/* Styling for navbar links */
+ul li a {
+color: white;
+text-decoration: none;
+padding: 10px 20px;
+margin: 5px;
+font-size: 16px;
+}
+
+/* Hover and active state styling for navbar links */
+ul li a:hover, ul li a.active {
+background-color: #60a9ff; 
+border-radius: 4px;
+}
+
+#nav a.activeNav {
+background-color: #60a9ff;
+border-radius: 4px;
+}
+
+
+main{
+display: flex;
+justify-content: center;
+}
+
+/* Container styles */
+.flex-container {
+display: flex;
+flex-direction: column; 
+gap: 30px;             
+width: 100%;           
+align-items: center;  
+justify-content: space-evenly;
+}
+
+/* Item styles */
+.flex-item {
+background-color: #007FB8;
+color: white;
+padding: 20px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 40rem;
+border-radius: 8px; 
+}
+
+.flex-item h2{
+border-bottom: 1px solid white;
+padding: 10px;
+}
+
+.flex-item img{
+width: 407px;
+height: 230px;
+margin: 20px;
+}
+
+.flex-item p{
+width: 407px;
+height: 230px;
+text-align: justify;
+margin: 20px;
+line-height: 1.2rem;
+}
+
+
+#overview{
+margin-top: 30px;
+}
+
+#activities{
+margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer styling */
+.footer {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 20px;
+background-color: #00C9A7;
+color: #fff;
+text-align: center;
+font-size: 0.9rem;
+}
+
+footer span{
+color: #007FB8;
+}
+
+/* Paragraph styling in footer */
+.footer p {
+margin: 5px 0;
+}
+
+
+.footer-links {
+display: flex;
+gap: 15px;
+margin-top: 10px;
+}
+
+/* Footer link styling */
+.footer-links a {
+color: white;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+/* Hover effect for footer links */
+.footer-links a:hover {
+color: #60a9ff;
+}
+
+
+
+/* Media queries  */
+
+@media (max-width: 768px) {
+
+
+.flex-item {
+    
+    width: 30rem;
+
+}
+
+
+}
+
+
+@media (max-width: 512px) {
+
+.flex-container {
+    gap: 30px;            
+}
+
+
+.flex-item {
+    
+    padding: 20px;
+    width: 21rem;
+
+}
+
+.flex-item h2{
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.flex-item img{
+    width: 307px;
+    height: 173.4px;
+    margin: 20px;
+}
+
+.flex-item p{
+    width: 307px;
+    height: 173.4px;
+    margin: 20px;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+
+
+#overview{
+    margin-top: 30px;
+}
+
+#activities{
+    margin-bottom: 50px;
+}
+
+.footer {
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.footer-links {
+    flex-direction: column; 
+    gap: 5px;
+}
+
+
+}
+
+

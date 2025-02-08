@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seneca</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="styles/styles_1.css">
+</head>
+<body>
+
+    <header>
+        
+
+
+        <div id="home">
+            <div id="overlay"></div>
+            <h1 id="tagline">Seneca Lake<br> <span>A geological Anamoly</span></h1>
+        </div>
+
+        <!-- Navigation bar section -->
+        <nav id="navbar">
+
+          
+            
+            <ul id="nav">
+                
+                <li><a href="index.html" class="nav-links">Seneca</a></li>
+                
+                
+                <li><a href="finger_lakes_2.html" class="nav-links">Seneca2</a></li>
+                
+                
+                <li><a href="finger_lakes_3.html" class="nav-links">Seneca3</a></li>
+                
+                
+            </ul>
+            
+        </nav>
+
+    </header>
+
+
+    <!-- Main section with standard flexbox -->
+
+    <main>
+
+        <div class="flex-container">
+
+            <div class="flex-item" id="overview">
+                <h2>Overview</h2>
+                <!-- <img src="images/senecaOverview.jpeg" alt=""> -->
+                 <!-- Srcset used in picture element for every design and image -->
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/senecaOverview_200.png">
+                    <img src="images/senecaOverview.jpeg" alt="Seneca Overview">
+                </picture>
+                <p>Seneca Lake, stretching 38 miles long and approximately 3 miles wide,with a depth of 618 feet, making it one of the most cherished Finger Lakes in New York. Surrounded by scenic hills and vineyards, its picturesque landscapes offer breathtaking views and numerous activities. The lake is a hub for outdoor enthusiasts, offering opportunities for boating, fishing, sailing, and swimming.</p>
+            </div>
+
+            <div class="flex-item">
+                <h2>History</h2>
+                <!-- <img src="images/senecaHistory.jpeg" alt=""> -->
+                <picture>
+                    
+                    <source media="(max-width: 500px)" srcset="images/senecaHistory_200.png">
+                    <img src="images/senecaHistory.jpeg" alt="Seneca History">
+                </picture>
+                <p>Seneca Lake was formed at least two million years ago by glacial carving of streams and valleys. Originally it was a part of a series of rivers that flowed northward. Around this time many continental glaciers moved into the area and started the Pleistocene glaciation also known as the Ice Age. It is presumed that the Finger Lakes were created by many advances and retreats of massive glaciers that were up to 2 miles thick.</p>
+            </div>
+
+            <div class="flex-item">
+                <h2>Ecology</h2>
+                <!-- <img src="images/senecaEcology.jpeg" alt=""> -->
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/senecaEcology_200.png">
+                    <img src="images/senecaEcology.jpeg" alt="Seneca Ecology">
+                </picture>
+                <p>Seneca lake has a typical aquatic population for large deep lakes in the northeast, with coldwater fish such as lake trout and Landlocked Atlantic salmon inhabiting the deeper waters, and warmwater fish such as smallmouth bass and yellow perch inhabiting the shallower areas. The lake is also home to a robust population of "sawbellies," the local term for alewife shad.</p>
+            </div>
+
+            <div class="flex-item" id="activities">
+                <h2>Activities</h2>
+                <!-- <img src="images/senecaActivities.jpeg" alt=""> -->
+                <picture>
+                    
+                    <source media="(max-width: 500px)" srcset="images/senecaActivities_200.png">
+                    <img src="images/senecaActivities.jpeg" alt="Seneca Activities">
+                </picture>
+                <p>Experience NASCAR at Watkins Glen International, hike trails at Watkins Glen State Park, or explore the Seneca Lake Wine Trail's wineries and breweries. Enjoy lake views with boat tours or visit unique attractions like the Farm Sanctuary and Seneca Museum of Waterways. Fishing enthusiasts can take advantage of the lake’s depth and public access for year-round sportfishing opportunities.</p>
+            </div>
+        </div>
+        
+        
+
+    </main>
+
+    <!-- Footer  -->
+
+    <footer class="footer">
+        <p>&copy; 2024 Dhairya Dutt</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/dhairya-dutt/" target="_blank">LinkedIn</a>
+          <a href="mailto:dd8053@g.rit.edu">Email</a>
+          <a href="https://github.com/DhairyaDutt" target="_blank">GitHub</a>
+          <a href="../index.html" target="_blank">Homepage</a>
+        </div>
+        <div class="footer-links">
+            <span>References: </span>
+            <a href="https://www.fingerlakes.com/seneca/" target="_blank">Seneca</a>
+            <a href="https://www.newyorkupstate.com/seneca-lake/2015/04/seneca_lake_activities_7_fun_things_to_do.html" target="_blank">NYup</a>
+            <a href="https://unsplash.com/@clcortelyou" target="_blank">Photos</a>
+            <a href="https://en.wikipedia.org/wiki/Seneca_Lake_(New_York)" target="_blank">Wikipedia</a>
+
+        </div>
+    </footer>
+
+
+    <script src="scripts/scrollEffect.js"></script>
+    
+</body>
+</html>

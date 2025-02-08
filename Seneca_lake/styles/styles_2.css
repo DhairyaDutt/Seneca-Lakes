@@ -1,0 +1,354 @@
+/* Resetting  */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+scroll-behavior: smooth;
+
+}
+
+body{
+background-color: #D0D3D4;
+}
+
+/* Landing Image and text styles */
+
+
+#landing {
+position: relative;
+overflow: hidden;
+/* text-align: center; */
+}
+
+#landingImage {
+display: block;
+width: 100%;
+height: auto;
+}
+
+#arrow{
+position: absolute;
+top: 40%;
+right: 80%;
+width: 25%;
+height: auto;
+}
+
+.overlay-text {
+position: absolute;
+top: 40%;
+right: 63%;
+/* transform: translate(-50%, -50%); */
+color: white;
+font-size: 2rem;
+font-weight: bold;
+/* text-align: center; */
+}
+
+.overlay-text h4{
+font-size: 1.5rem;
+}
+
+
+
+
+/* Navbar  */
+#navbar {
+position: fixed;
+top: 0;
+width: 100%;
+padding: 10px;
+background-color: black;
+transition: background-color 0.3s ease; 
+z-index: 1000;
+}
+
+
+
+/* General styling for lists */
+ul {
+list-style-type: none;
+display: flex;
+align-items: center;
+}
+
+/* Styling each list item in navbar */
+ul li {
+display: inline;
+font-weight: 400;
+}
+
+
+/* Styling for navbar links */
+ul li a {
+color: white;
+text-decoration: none;
+padding: 10px 20px;
+margin: 5px;
+font-size: 16px;
+}
+
+/* Hover and active state styling for navbar links */
+ul li a:hover, ul li a.active {
+background-color: #F76902; 
+border-radius: 4px;
+}
+
+#nav a.activeNav {
+background-color: #F76902;
+border-radius: 4px;
+}
+
+
+
+
+
+main{
+display: flex;
+justify-content: center;
+
+}
+
+
+.main-container{
+/* max-width: 80%; */
+/* border: 1px solid red; */
+background-color: white;
+margin: 60px 60px;
+padding: 30px;
+
+}
+
+.section1{
+margin-top: 50px;
+}
+
+.section h2{
+margin: 10px;
+color: #F76902;
+text-align: center;
+border-bottom: 1px solid black;
+} 
+
+/* Flex container */
+.flex-container {
+display: flex;
+flex-wrap: wrap; 
+gap: 2rem; 
+justify-content: center; 
+align-items: center;
+}
+
+
+.box {
+flex: 1 1 20%; 
+width: 407px;
+height: 230px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+margin: 13px;
+
+}
+
+.box img{
+width: 407px; 
+height: 230px;
+}
+
+.box p{
+color: black;
+width: 407px; 
+height: 230px;
+font-size: 1.1rem;
+text-align: justify;
+display: flex;
+align-items: center;
+line-height: 1.6rem;
+
+}
+
+
+
+
+
+
+/* Footer  styling */
+.footer {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 20px;
+background-color: rgb(0,0,0);
+color: #fff;
+text-align: center;
+font-size: 0.9rem;
+}
+
+footer span{
+color: #F76902;
+}
+
+/* Paragraph styling in footer */
+.footer p {
+margin: 5px 0;
+}
+
+/* Footer links container */
+.footer-links {
+display: flex;
+gap: 15px;
+margin-top: 10px;
+}
+
+
+.footer-links a {
+color: white;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+/* Hover effect for footer links */
+.footer-links a:hover {
+color: #F76902;
+}
+
+
+
+/* Media Queries */
+
+
+@media (max-width: 1444px) {
+#arrow{
+    display: none;
+}
+
+.overlay-text {
+    width: 20rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.overlay-text h4{
+    font-size: 1.2rem;
+}
+}
+
+
+
+@media (max-width: 1076px) {
+.reverse {
+    flex-direction: column-reverse; 
+}
+
+.main-container{
+    width: 40rem;
+}
+
+.flex-container{
+    gap: 0;
+}
+}
+
+@media (max-width: 768px) {
+.overlay-text h1{
+    font-size: 3rem;
+}
+
+.overlay-text h4{
+    font-size: 1rem;
+}
+}
+
+
+@media (max-width: 512px) {
+
+
+.overlay-text h1{
+    font-size: 2rem;
+}
+
+.overlay-text h4{
+    font-size: 0.8rem;
+}
+
+#navbar {
+    padding: 5px;   
+}
+    
+
+    ul li a {
+    
+    padding: 5px 10px;
+    margin: 2px;
+    font-size: 10px;
+    }
+    
+
+
+    .main-container{
+    width: 20rem;
+}
+.section1{
+    margin-top: 50px;
+}
+
+.section h2{
+    font-size: 1.2rem;
+} 
+
+    /* Flex container */
+.flex-container {
+    gap: 15px;
+}
+
+/* Individual boxes */
+.box {
+    
+    width: 207px; 
+    height: 117px;
+    
+    margin: 7px;
+
+}
+
+.box img{
+    width: 207px; 
+    height: 117px;
+}
+
+.box p{
+    
+    width: 207px; 
+    height: 117px;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    
+
+}
+
+.footer {
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.footer-links {
+    flex-direction: column; 
+    gap: 5px;
+}
+
+
+}
+
+
+
+
